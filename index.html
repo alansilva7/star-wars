@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star-Devs</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <!-- js -->
+    <script src="./js/index.js" defer></script>
+    <audio src="IMPERI_1.MP3" autoplay defer></audio>
+        <!-- fonts -->>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Star-Devs</h1>
+    </header>
+
+    <main>
+        <section class="cards-main">
+            <div class="card-container">
+                <div class="card-main">
+                    <span>Characters</span>
+                    <h2 id="persons">Carregando...</h2>
+                </div>
+                <img src="./img/darth.svg" alt="Carregando Personagens">
+            </div>
+
+            <div class="card-container">
+                <div class="card-main">
+                    <span>Starships</span>
+                    <h2 id="starships">Carregando...</h2>
+                </div>
+                <img src="./img/starship.svg" alt="Imagem Naves Estelares">
+            </div>
+
+            <div class="card-container">
+                <div class="card-main">
+                    <span>Planets</span>
+                    <h2 id="planets">Carregando...</h2>
+                </div>
+                <img src="./img/planet.svg" alt="Imagem Planetas">
+            </div>
+
+        </section>
+
+        <section class="phrases-container">
+            <button id="btn-phrases" onclick="loadPhrase()">Tell me a sentence!</button>
+            <p id="phrase"></p>
+        </section>
+    </main>
+
+        <div>
+            <label><p>Dark <input type="radio" id="btnDark" name="theme" value="btnDark"></p></label>
+            <label><p>Light<input type="radio" id="btnLight" name="theme" value="btnLight"></p></label>
+            <label><p>Default<input type="radio" id="btnInitial" name="theme" value="btnInitial"></p></label>
+        </div>
+</body>
+</html> 
